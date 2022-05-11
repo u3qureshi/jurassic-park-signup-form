@@ -231,7 +231,7 @@ button:hover {
 
 #copyright {
     position: fixed;
-    text-align: center;
+    text-align: left;
     bottom: 0px;
     width: 100%;
     font-size: 1.2rem;
