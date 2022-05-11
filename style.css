@@ -40,7 +40,7 @@ h1 {
 }
 
 .card {
-    background-color: rgba(198, 255, 198, 0.776);
+    background-color: rgba(123, 255, 123, 0.571);
     border: 2px ridge darkgreen;
     border-radius: 0.5rem;
     padding: 0.4rem;
@@ -220,8 +220,8 @@ button:hover {
     min-width: 20rem;
     font-weight: 600;
     height: auto;
-    color: yellowgreen;
-    text-shadow: 0 0 5px darkred, 0 0 6px yellow;
+    color: rgb(197, 253, 181);
+    text-shadow: 0 0 5px red, 0 0 6px yellow;
     font-size: 4rem;
     margin-bottom: 2rem;
     letter-spacing: 0.3rem;
