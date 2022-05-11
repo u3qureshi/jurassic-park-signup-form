@@ -53,11 +53,17 @@ h1 {
     color: black;
 }
 
+.confirm-password-input:focus,
+.password-input:focus {
+    outline: none;
+}
+
 .card-group>input {
     border: 1px solid darkgreen;
     border-radius: .3rem;
     font-size: 1rem;
     padding: 0.3rem;
+    font-family: 'Maitree', serif;
 }
 
 .card-group:last-child {
@@ -75,4 +81,56 @@ h2 {
 
 .card.active {
     display: block;
+}
+
+h4,
+li {
+    margin: -0.5rem;
+    padding: 0;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.or {
+    list-style: none;
+}
+
+h4:first-of-type {
+    margin: 0;
+    margin-top: 0.3rem;
+    margin-bottom: -1rem;
+}
+
+span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: darkred;
+}
+
+button {
+    cursor: pointer;
+    margin: 0.8rem;
+    background-image: url('./images/jungle-button-bi.png');
+    color: white;
+    background-size: cover;
+    box-shadow: 0px 0px 2px 2px lightseagreen;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20%;
+    padding: 9px;
+    font-size: 2rem;
+}
+
+button:hover {
+    color: greenyellow;
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px 2px green;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
