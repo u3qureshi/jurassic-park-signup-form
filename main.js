@@ -56,6 +56,12 @@ previousButtons.forEach(previousButton => {
     });
 });
 
+separateSignupSteps.forEach(formStep => {
+    formStep.addEventListener('animationend', e => {
+        separateSignupSteps[currentStep].classList.remove('hide');
+        e.target.classList.toggle('hide', !e.target.classList.contains('active'))
+    });
+});
 
 /*This function will toggle the class 'active' for the currentStep*/
 function displayCurrentStep() {

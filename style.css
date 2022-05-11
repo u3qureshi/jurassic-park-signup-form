@@ -6,6 +6,10 @@ html {
     background-size: cover;
 }
 
+body {
+    background: transparent;
+}
+
 :root {
     --jurassic-font: 'Jurassic Park', sans-serif;
     --jurassic-spacing: 0.3rem;
@@ -27,16 +31,18 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 0;
+    text-shadow: 0 0 5px black, 0 0 7px red;
 }
 
 .card {
     background-color: rgba(198, 255, 198, 0.776);
     border: 2px ridge darkgreen;
     border-radius: 0.5rem;
-    padding: 0.5rem;
-    max-width: 400px;
+    padding: 0.4rem;
+    min-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
-    display: none;
+    animation: fade 300ms ease-in-out forwards;
 }
 
 .card-group {
@@ -80,7 +86,7 @@ h2 {
 /*If the card has active as a class name then it will be visible*/
 
 .card.active {
-    display: block;
+    animation: slide 300ms 150ms ease-in-out both;
 }
 
 h4,
@@ -110,7 +116,7 @@ span {
 button {
     cursor: pointer;
     margin: 0.8rem;
-    background-image: url('./images/jungle-button-bi.png');
+    background-image: url('./images/jungle-button-bi.avif');
     color: white;
     background-size: cover;
     box-shadow: 0px 0px 2px 2px lightseagreen;
@@ -119,6 +125,22 @@ button {
     border-radius: 20%;
     padding: 9px;
     font-size: 2rem;
+    border: 1px solid white;
+}
+
+button:disabled {
+    cursor: pointer;
+    margin: 0.8rem;
+    background-image: url('./images/jungle-button-bi.avif');
+    color: white;
+    background-size: cover;
+    box-shadow: 0px 0px 2px 2px lightseagreen;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20%;
+    padding: 9px;
+    font-size: 2rem;
+    border: 1px solid white;
 }
 
 button:hover {
@@ -133,4 +155,98 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin: 0;
+}
+
+.multi-step-form {
+    overflow: hidden;
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-220%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.70);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.jurassic-logo {
+    display: flex;
+    width: 300px;
+    height: auto;
+    align-self: flex-start;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-text {
+    max-width: 30rem;
+    min-width: 20rem;
+    font-weight: 600;
+    height: auto;
+    color: yellowgreen;
+    text-shadow: 0 0 5px darkred, 0 0 6px yellow;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.6rem;
+    line-height: 3rem;
+}
+
+#copyright {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2px;
+    color: black;
+}
+
+.fa {
+    padding-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    color: yellow;
+    transition: 0.5s;
+    transform: scale(1.4);
 }
