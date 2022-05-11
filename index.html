@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/jurassic-park" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jurassic Park</title>
+</head>
+
+<body>
+
+    <h1>Jurassic Park</h1>
+
+    <form data-multi-step-form>
+        <div class="card active" data-signup-step="1">
+            <h2>Step 1 of 3</h2>
+            <div class="card-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="card-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="card-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" name="confirm-password" id="confirm-password">
+            </div>
+            <button type="button">NEXT</button>
+
+        </div>
+        <div class="card" data-signup-step="2">
+            <h2>Step 2 of 3</h2>
+            <div class="card-group">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address">
+            </div>
+            <div class="card-group">
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <div class="card-group">
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country">
+            </div>
+            <div class="card-group">
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" name="postal-code" id="postal-code">
+            </div>
+            <button type="button">PREVIOUS</button>
+            <button type="button">NEXT</button>
+        </div>
+        <div class="card" data-signup-step="3">
+            <h2>Step 3 of 3</h2>
+            <div class="card-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name">
+            </div>
+            <div class="card-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div class="card-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+
+            <button type="button">PREVIOUS</button>
+            <button type="submit">SUBMIT</button>
+        </div>
+
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+html {
+    background: url(./images/Jungle-bi.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+:root {
+    --jurassic-font: 'Jurassic Park', sans-serif;
+    --jurassic-spacing: 0.3rem;
+}
+
+* {
+    font-family: var(--jurassic-font);
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: var(--jurassic-font);
+    font-size: 7rem;
+    letter-spacing: var(--jurassic-spacing);
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.card {
+    background-color: rgba(198, 255, 198, 0.776);
+    border: 2px ridge darkgreen;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+    display: none;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.card-group>label {
+    font-family: var(--jurassic-font);
+    font-weight: normal;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: black;
+}
+
+.card-group>input {
+    border: 1px solid darkgreen;
+    border-radius: .3rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+.card-group:last-child {
+    margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0.1rem;
+    margin-bottom: 0.8rem;
+}
+
+
+/*If the card has active as a class name then it will be visible*/
+
+.card.active {
+    display: block;
+}
