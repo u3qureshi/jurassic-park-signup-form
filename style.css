@@ -6,6 +6,11 @@ html {
     background-size: cover;
 }
 
+@font-face {
+    font-family: "Jurassic Park";
+    src: url('./fonts/Jurassic-Park.woff') format('woff');
+}
+
 body {
     background: transparent;
 }
